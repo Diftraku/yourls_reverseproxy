@@ -1,0 +1,10 @@
+* YOURLS CloudFlare Plugin
+Fixes the user IPs to point to the actual user instead of the CloudFlare CDN servers.
+This information is gathered from CF-Connecting-IP and applied as a filter to yourls_get_IP()
+
+* Installation
+1. Fetch/pull/download the repo
+2. Copy the folder `cloudflare` into `{YOURLS_ABSPATH}/user/plugins` where `{YOURLS_ABSPATH}` is the location your YOURLS install is located in.
+3. Activate plugin on administrator interface
+4. ???
+5. Accurate statistics with reliable CDN, huzzah!
