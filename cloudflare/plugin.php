@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: CloudFlare
-Plugin URI: http://cloudflare.com/
-Description: Fixes incoming IPs to use the CloudFlare CF-Connecting-IP instead of CDN IP
+Plugin URI: https://github.com/Diftraku/YOURLS-CloudFlare-Plugin/
+Description: Fixes incoming IPs to use the CloudFlare CF-Connecting-IP instead of CDN server IP
 Version: 0.1
 Author: Diftraku
 Author URI: http://project-moocow.net/
@@ -11,7 +11,7 @@ Author URI: http://project-moocow.net/
 // No direct call
 if( !defined( 'YOURLS_ABSPATH' ) ) die();
 
-// Simple fix to get the correct source IP
+// Add a filter to get_IP for the real IP instead of the CDN reverse proxy
 yourls_add_filter( 'get_IP', 'cloudflare_get_IP');
 function cloudflare_get_IP($ip) {
 	if ( !empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
