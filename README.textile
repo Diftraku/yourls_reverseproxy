@@ -1,0 +1,16 @@
+h2. YOURLS CloudFlare Plugin
+
+Fixes the user IPs to point to the actual user instead of the CloudFlare CDN servers.
+This information is gathered from _CF-Connecting-IP_ and applied as a filter to _yourls_get_IP()_
+
+h3. Why?
+
+Because CloudFlare uses a reverse proxy to fetch the content into it's CDN, the server will see the proxy IPs instead of the _real_
+
+h3. Installation
+
+# Fetch/pull/download the repo
+# Copy the folder _cloudflare_ into _YOURLS_ABSPATH/user/plugins_ where _YOURLS_ABSPATH_ is the location your YOURLS install is located in.
+# Activate plugin on administrator interface.
+# ???
+# Accurate statistics with a reliable CDN, huzzah!

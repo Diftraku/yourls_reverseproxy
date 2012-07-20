@@ -3,12 +3,12 @@
 Plugin Name: CloudFlare
 Plugin URI: https://github.com/Diftraku/YOURLS-CloudFlare-Plugin/
 Description: Fixes incoming IPs to use the CloudFlare CF-Connecting-IP instead of CDN server IP
-Version: 0.1
+Version: 1.0
 Author: Diftraku
-Author URI: http://project-moocow.net/
+Author URI: http://derpy.me/
 */
 
-// No direct call
+// Block direct access to the plugin
 if( !defined( 'YOURLS_ABSPATH' ) ) die();
 
 // Add a filter to get_IP for the real IP instead of the CDN reverse proxy
