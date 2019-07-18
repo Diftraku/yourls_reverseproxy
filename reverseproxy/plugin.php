@@ -5,7 +5,6 @@ Plugin URI: https://github.com/Diftraku/yourls_cloudflare/
 Description: Fixes incoming IPs to use the client IP from reverse proxies
 Version: 2.0
 Author: Diftraku
-Author URI: http://derpy.me/
 */
 
 // Block direct access to the plugin
