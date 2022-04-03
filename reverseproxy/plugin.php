@@ -3,7 +3,7 @@
 Plugin Name: ReverseProxy
 Plugin URI: https://github.com/Diftraku/yourls_cloudflare/
 Description: Fixes incoming IPs to use the client IP from reverse proxies
-Version: 2.0
+Version: 2.1
 Author: Diftraku
 */
 
