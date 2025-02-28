@@ -1,3 +1,7 @@
+**This project has been archived, you may fork it and continue to develop it further.**
+
+**The code may be insecure as it is and no effort to correct any bugs will be taken.**
+
 h2. YOURLS Reverse Proxy Plugin
 
 Fixes the user IPs to point to the actual user instead of your cloud provider's infrastructure IPs, for now the following providers and their headers are supported:
